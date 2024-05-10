@@ -1,4 +1,5 @@
 # TextOPS (Made Work Easier)
+Visit my website at https://akashkapoor0001.github.io/TextOPS/
 
 **<h2>Description:</h2>**
 TextOPS is an intuitive web application crafted with React.js, designed to streamline text manipulation tasks for users with efficiency and ease. With a sleek user interface and powerful functionalities, TextOPS empowers users to transform text effortlessly, whether it's converting case, copying content, clearing text, utilizing text-to-speech capabilities, or calculating word counts.
@@ -65,10 +66,15 @@ Access TextOPS in your web browser at http://localhost:3000.
 **<h2>Technologies Used</h2>**
 
 React.js
+
 HTML
+
 CSS
+
 JavaScript
+
 SpeechSynthesis API (for text-to-speech functionality)
+
 
 **<h2>License</h2>**
 This project is licensed under the MIT License.
