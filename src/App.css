@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+/* Add a hover animation for the navbar links */
+.navbar-nav .nav-item a.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+  border-bottom: 3px solid transparent; /* Set a transparent border initially */
+}
+
+.navbar-nav .nav-item a.nav-link:hover {
+  color: rgb(22, 65, 233); /* Change the text color to red on hover */
+  border-bottom-color: rgb(22, 65, 233); /* Change the border color on hover */
+}
+
+/* Additional styling for the dropdown */
+.dropdown-menu a.dropdown-item:hover {
+  background-color: #f8d7da; /* Change the background color on hover */
+  color: #721c24; /* Change the text color on hover */
+}
+
+/* About Button on Hover css */
+/* Container for the tooltip */
+
+/* Styling for the tooltip container */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the tooltip */
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Styling for the tooltip arrow */
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .tooltip {
+  display: block;
+}

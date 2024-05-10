@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextOPS/static/css/main.298ffdc8.css",
+    "main.js": "/TextOPS/static/js/main.dc5e9822.js",
+    "static/js/453.bb83d1b5.chunk.js": "/TextOPS/static/js/453.bb83d1b5.chunk.js",
+    "index.html": "/TextOPS/index.html",
+    "main.298ffdc8.css.map": "/TextOPS/static/css/main.298ffdc8.css.map",
+    "main.dc5e9822.js.map": "/TextOPS/static/js/main.dc5e9822.js.map",
+    "453.bb83d1b5.chunk.js.map": "/TextOPS/static/js/453.bb83d1b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.298ffdc8.css",
+    "static/js/main.dc5e9822.js"
+  ]
+}
