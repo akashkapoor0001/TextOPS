@@ -42,7 +42,7 @@ export default function TextForm(props) {
     }
 
     const [isSpeaking, setIsSpeaking] = useState(false);
-    const [text, setText] = useState("Enter Text Here");
+    const [text, setText] = useState("");
     // text = "New Text" // Wrong way to change the state
     // setText("New Text") // Correct way to change the state
     return (
@@ -58,16 +58,16 @@ export default function TextForm(props) {
                         rows="10"
                     ></textarea>
                 </div>
-                <button className="btn btn-primary my-2 mx-1" onClick={handleUpClick}>
+                <button disabled = {text.length ===0} className="btn btn-primary my-2 mx-1" onClick={handleUpClick}>
                     Convert to Uppercase
                 </button>
-                <button className="btn btn-primary my-2 mx-1" onClick={handleLoClick}>
+                <button disabled = {text.length ===0} className="btn btn-primary my-2 mx-1" onClick={handleLoClick}>
                     Convert to Lowercase
                 </button>
-                <button className="btn btn-primary my-2 mx-1" onClick={handleClearText}>
+                <button disabled = {text.length ===0} className="btn btn-primary my-2 mx-1" onClick={handleClearText}>
                     Clear Text
                 </button>
-                <button className="btn btn-outline-danger my-2 mx-1" onClick={handleCopyText}>
+                <button disabled = {text.length ===0} className="btn btn-outline-danger my-2 mx-1" onClick={handleCopyText}>
                     Copy to Clipboard
                 </button>
 
@@ -78,7 +78,7 @@ export default function TextForm(props) {
                     Stop <img src="https://cdn2.iconfinder.com/data/icons/multimedia-glyph-black/2048/Mute-128.png" alt="logo" height = "25" width = "25" className="d-inline-block align-text-top" />
                 </button> */}
 
-                <button
+                <button disabled = {text.length ===0}
                     className="btn btn-success my-2 mx-1"
                     onClick={isSpeaking ? handleOnStop : handleOnSpeak}
                 >
@@ -90,7 +90,7 @@ export default function TextForm(props) {
                 <p>
                     {text.split(" ").filter((element) => {return element.length !== 0}).length} Words and {text.length} Characters
                 </p>
-                <p>{0.003 * text.split(" ").length} Minutes Read</p>
+                <p>{0.003 * text.split(" ").filter((element) => {return element.length !== 0}).length} Minutes Read</p>
                 {/* <h3>Preview</h3> */
                 /* <p>{text.length>0?text:"Enter Something in the Text Box to preview it here."}</p> */}
             </div>
